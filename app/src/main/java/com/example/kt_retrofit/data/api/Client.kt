@@ -14,6 +14,4 @@ object Client {
     val api: GitHubService by lazy {
         retrofit.create(GitHubService::class.java)
     }
-
-
 }

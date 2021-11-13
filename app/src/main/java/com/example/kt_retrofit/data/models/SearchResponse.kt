@@ -1,7 +1,9 @@
 package com.example.kt_retrofit.data.models
 
+
+import com.google.gson.annotations.SerializedName
+
 data class SearchResponse(
-    val incomplete_results: Boolean,
-    val items: List<User>? = null,
-    val total_count: Int? = null
+    @SerializedName("items")
+    val items: List<User>
 )
